@@ -111,7 +111,7 @@
         margin-bottom: 0;
       }
       .card-text-titulo {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-anchor: middle;
         -webkit-user-select: none;
         -moz-user-select: none;
@@ -128,7 +128,12 @@
         user-select: none;
         margin-top: 1.5%;
       }
-
+      .card-body{
+        height: 200px;
+        display: flex; 
+        flex-direction: column; 
+        flex-grow: 1;
+      }
 
     </style>
 
@@ -168,13 +173,13 @@
     <div class="container">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect></svg>
-            <div class="card-body">
-              <p class="card-text-autor mb-0">Autor</p>
-              <p class="card-text-titulo">Titulo</p>
-              <p class="card-text-ubi">Ubicación del usuario</p>
-              <div class="d-flex justify-content-between align-items-center">
+          <div class="card shadow-sm d-flex flex-column">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="img/gente_normal.jpg">
+            <div class="card-body" style="display: flex; flex-direction: column; flex-grow: 1;">
+              <p class="card-text-autor mb-0">Sally Rooney</p>
+              <p class="card-text-titulo">Gente Normal</p>
+              <p class="card-text-ubi">Beccar, GBA</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-custom">Ver más</button>
                 </div>
@@ -184,136 +189,152 @@
           </div>
         </div>
         <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect></svg>
-            <div class="card-body">
-              <p class="card-text-autor mb-0">Autor</p>
-              <p class="card-text-titulo">Titulo</p>
-              <p class="card-text-ubi">Ubicación del usuario</p>
-              <div class="d-flex justify-content-between align-items-center">
+          <div class="card shadow-sm d-flex flex-column">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="img/esperando_a_godot.jpg">
+            <div class="card-body" style="display: flex; flex-direction: column; flex-grow: 1;">
+              <p class="card-text-autor mb-0">Samuel Beckett</p>
+              <p class="card-text-titulo">Esperando a Godot</p>
+              <p class="card-text-ubi">Belgrano, CABA</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-custom">Ver más</button>
                 </div>
-                <small class="text-body-secondary">Hace 10 hs</small>
+                <small class="text-body-secondary">Hace 7 mins</small>
               </div>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect></svg>
-            <div class="card-body">
-              <p class="card-text-autor mb-0">Autor</p>
-              <p class="card-text-titulo">Titulo</p>
-              <p class="card-text-ubi">Ubicación del usuario</p>
-              <div class="d-flex justify-content-between align-items-center">
+          <div class="card shadow-sm d-flex flex-column">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="img/esperando_a_godot.jpg">
+            <div class="card-body" style="display: flex; flex-direction: column; flex-grow: 1;">
+              <p class="card-text-autor mb-0">Johann Wolfgang von Goethe</p>
+              <p class="card-text-titulo">Las penas del joven Werther</p>
+              <p class="card-text-ubi">San Telmo, GBA</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-custom">Ver más</button>
                 </div>
-                <small class="text-body-secondary">09/09/2023</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect></svg>
-            <div class="card-body">
-              <p class="card-text-autor mb-0">Autor</p>
-              <p class="card-text-titulo">Titulo</p>
-              <p class="card-text-ubi">Ubicación del usuario</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-custom">Ver más</button>
-                </div>
-                <small class="text-body-secondary">02/09/2023</small>
+                <small class="text-body-secondary">Hace 7 mins</small>
               </div>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect></svg>
-            <div class="card-body">
-              <p class="card-text-autor mb-0">Autor</p>
-              <p class="card-text-titulo">Titulo</p>
-              <p class="card-text-ubi">Ubicación del usuario</p>
-              <div class="d-flex justify-content-between align-items-center">
+          <div class="card shadow-sm d-flex flex-column">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c"></rect>
+            </svg>
+            <div class="card-body" style="display: flex; flex-direction: column; flex-grow: 1;">
+              <p class="card-text-autor mb-0">Brian Weiss</p>
+              <p class="card-text-titulo">Muchas vidas, muchos maestros</p>
+              <p class="card-text-ubi">San Isidro, GBA</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-custom">Ver más</button>
                 </div>
-                <small class="text-body-secondary">25/08/2023</small>
+                <small class="text-body-secondary">Hace 7 mins</small>
               </div>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect></svg>
-            <div class="card-body">
-              <p class="card-text-autor mb-0">Autor</p>
-              <p class="card-text-titulo">Titulo</p>
-              <p class="card-text-ubi">Ubicación del usuario</p>
-              <div class="d-flex justify-content-between align-items-center">
+          <div class="card shadow-sm d-flex flex-column">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c"></rect>
+            </svg>
+            <div class="card-body" style="display: flex; flex-direction: column; flex-grow: 1;">
+              <p class="card-text-autor mb-0">Haruki Murakami </p>
+              <p class="card-text-titulo">Tokio Blues</p>
+              <p class="card-text-ubi">San Isidro, GBA</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-custom">Ver más</button>
                 </div>
-                <small class="text-body-secondary">20/08/2023</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect></svg>
-            <div class="card-body">
-              <p class="card-text-autor mb-0">Autor</p>
-              <p class="card-text-titulo">Titulo</p>
-              <p class="card-text-ubi">Ubicación del usuario</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-custom">Ver más</button>
-                </div>
-                <small class="text-body-secondary">29/07/2023</small>
+                <small class="text-body-secondary">Hace 7 mins</small>
               </div>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect></svg>
-            <div class="card-body">
-              <p class="card-text-autor mb-0">Autor</p>
-              <p class="card-text-titulo">Titulo</p>
-              <p class="card-text-ubi">Ubicación del usuario</p>
-              <div class="d-flex justify-content-between align-items-center">
+          <div class="card shadow-sm d-flex flex-column">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c"></rect>
+            </svg>
+            <div class="card-body" style="display: flex; flex-direction: column; flex-grow: 1;">
+              <p class="card-text-autor mb-0">Rodolfo Walsh</p>
+              <p class="card-text-titulo">Operación Masacre</p>
+              <p class="card-text-ubi">Palermo, GBA</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-custom">Ver más</button>
                 </div>
-                <small class="text-body-secondary">29/07/2023</small>
+                <small class="text-body-secondary">Hace 7 mins</small>
               </div>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect></svg>
-            <div class="card-body">
-              <p class="card-text-autor mb-0">Autor</p>
-              <p class="card-text-titulo">Titulo</p>
-              <p class="card-text-ubi">Ubicación del usuario</p>
-              <div class="d-flex justify-content-between align-items-center">
+          <div class="card shadow-sm d-flex flex-column">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c"></rect>
+            </svg>
+            <div class="card-body" style="display: flex; flex-direction: column; flex-grow: 1;">
+              <p class="card-text-autor mb-0">Matt Haig</p>
+              <p class="card-text-titulo">La Biblioteca de la Medianoche</p>
+              <p class="card-text-ubi">Liniers, GBA</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-custom">Ver más</button>
                 </div>
-                <small class="text-body-secondary">15/07/2023</small>
+                <small class="text-body-secondary">Hace 7 mins</small>
               </div>
             </div>
           </div>
         </div>
-      </div>
+        <div class="col">
+          <div class="card shadow-sm d-flex flex-column">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c"></rect>
+            </svg>
+            <div class="card-body" style="display: flex; flex-direction: column; flex-grow: 1;">
+              <p class="card-text-autor mb-0">Patti Smith</p>
+              <p class="card-text-titulo">Eramos unos niños</p>
+              <p class="card-text-ubi">Martinez, GBA</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-custom">Ver más</button>
+                </div>
+                <small class="text-body-secondary">Hace 7 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm d-flex flex-column">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c"></rect>
+            </svg>
+            <div class="card-body" style="display: flex; flex-direction: column; flex-grow: 1;">
+              <p class="card-text-autor mb-0">Coco Mellors</p>
+              <p class="card-text-titulo"> Cleopatra y Frankenstein</p>
+              <p class="card-text-ubi">Berazategui, GBA</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-custom">Ver más</button>
+                </div>
+                <small class="text-body-secondary">Hace 7 mins</small>
+              </div>
+            </div>
+          </div>
+        </div> 
+        
     </div>
   </div>
   
