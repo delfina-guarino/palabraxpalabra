@@ -4,147 +4,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PalxPal | Trueque de libros </title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
-
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-
+    <link href="headers.css" rel="stylesheet">
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <style>
+    <!-- Enlace html con estilos-->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
-
-      .form-control-dark {
-        border-color: var(--bs-gray);
-      }
-      .form-control-dark:focus {
-        border-color: #fff;
-        box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
-      }
-
-      .text-small {
-        font-size: 85%;
-      }
-
-      .dropdown-toggle:not(:focus) {
-        outline: 0;
-      }
-
-      .nav-bgcolor-custom {
-        background-color: #FDFCF8;
-      }
-      
-      .btn-bgcolor-custom {
-        background-color: #6F42C1 ;
-        color: #FFFFFF; 
-      }
-
-      .btn-bgcolor-custom:hover {
-        background-color: none;
-        color:#6F42C1; 
-      }
-
-      .btn-outline-custom {
-          border-color: #6F42C1 ;
-          color: #6F42C1;
-          margin-right: 5px; 
-      }
-
-      .btn-outline-custom:hover {
-          background-color: #6F42C1; 
-          color: #FFFFFF; 
-      }
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-      .card-text-autor {
-        font-size: 1rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-        margin-bottom: 0;
-      }
-      .card-text-titulo {
-        font-size: 1.2rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-        font-weight: 500;
-        margin-bottom: 0;
-      }
-
-      .card-text-ubi {
-        font-size: 0.8rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-        margin-top: 1.5%;
-      }
-      .card-body{
-        height: 200px;
-        display: flex; 
-        flex-direction: column; 
-        flex-grow: 1;
-      }
-
-    </style>
-
-    <link href="headers.css" rel="stylesheet">
-
+  
   </head>
   <body>
     <nav class="py-2 nav-bgcolor-custom border-bottom">
       <div class="container d-flex flex-wrap nav-bgcolor-custom text-align-center">
         <ul class="nav me-auto">
-          <img height="50px" src="img/logo.png">
+          <img height="50px" src="assets/img/logo.png">
         </ul>
         <ul class="nav me-auto mt-1">
           <li class="card-text-titulo" >PalxPal</li>
@@ -156,7 +35,7 @@
         </ul>
       </div>
     </nav>
-    <header class="py-3 mb-4 border-bottom nav-bgcolor-custom ">
+    <header class="py-3 mb-4 border-bottom nav-bgcolor-custom">
     <div class="container d-flex flex-wrap justify-content-center">
       <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
         <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
@@ -172,9 +51,9 @@
   <div class="album py-5 bg-body-primary">
     <div class="container">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm d-flex flex-column">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="img/gente_normal.jpg">
+        <div class="col" style="height: 60rem;">
+          <div class="card shadow-sm d-flex flex-column div-img-portada" >
+            <img class="bd-placeholder-img card-img-top img-portada" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="assets/img/gente_normal.jpg">
             <div class="card-body" style="display: flex; flex-direction: column; flex-grow: 1;">
               <p class="card-text-autor mb-0">Sally Rooney</p>
               <p class="card-text-titulo">Gente Normal</p>
@@ -188,9 +67,9 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card shadow-sm d-flex flex-column">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="img/esperando_a_godot.jpg">
+        <div class="col" style="height: 60rem;">
+          <div class="card shadow-sm d-flex flex-column div-img-portada">
+            <img class="bd-placeholder-img card-img-top img-portada" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="assets/img/esperando_a_godot.jpg">
             <div class="card-body" style="display: flex; flex-direction: column; flex-grow: 1;">
               <p class="card-text-autor mb-0">Samuel Beckett</p>
               <p class="card-text-titulo">Esperando a Godot</p>
@@ -205,8 +84,8 @@
           </div>
         </div>
         <div class="col">
-          <div class="card shadow-sm d-flex flex-column">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="img/esperando_a_godot.jpg">
+          <div class="card shadow-sm d-flex flex-column div-img-portada">
+            <img class="bd-placeholder-img card-img-top img-portada" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false" src="assets/img/esperando_a_godot.jpg">
             <div class="card-body" style="display: flex; flex-direction: column; flex-grow: 1;">
               <p class="card-text-autor mb-0">Johann Wolfgang von Goethe</p>
               <p class="card-text-titulo">Las penas del joven Werther</p>
