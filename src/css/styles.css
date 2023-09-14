@@ -87,6 +87,7 @@
   .btn-bgcolor-custom:hover {
     background-color: none;
     color:#6F42C1; 
+    border-color: #6F42C1;
   }
 
   .btn-outline-custom {
@@ -114,6 +115,17 @@
     user-select: none;
     margin-bottom: 0;
   }
+  .card-text-genero {
+    font-size: 1rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+  }
+  
   .card-text-titulo {
     font-size: 1.2rem;
     text-anchor: middle;
@@ -132,6 +144,13 @@
     user-select: none;
     margin-top: 1.5%;
   }
+  .text-resumen {
+    font-size: 1rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
   .card-body{
     display: flex; 
     flex-direction: column; 
@@ -141,6 +160,7 @@
   .footer {
     bottom: 0;
     width: 100%;
+    margin-top: 80px;
     background-color: #f8f9fa; /* Set your desired background color */
     padding: 10px 0; /* Adjust the padding as needed */
 }
@@ -260,3 +280,59 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+.border-dashed { --bs-border-style: dashed; }
+
+body {
+  background-color: #f8f9fa;
+}
+.profile-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.profile-picture {
+  max-width: 200px;
+  border: 5px solid #ffffff;
+}
+.btn-edit-profile {
+  background-color: #6F42C1;
+  color: #ffffff;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.card-header {
+  background-color: #6F42C1;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: none;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-control {
+  border-radius: 10px;
+}
+.btn-primary {
+  background-color: #6F42C1;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.btn-primary:hover {
+  background-color: #6F42C1;
+}
+
+.btn-primary:hover {
+  background-color: #6F42C1;
+}
+

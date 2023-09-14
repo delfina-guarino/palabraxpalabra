@@ -20,15 +20,15 @@
     <nav class="py-2 nav-bgcolor-custom border-bottom">
       <div class="container d-flex flex-wrap nav-bgcolor-custom text-align-center">
         <ul class="nav me-auto">
-          <img height="50px" src="img/logo.png">
+          <img height="50px" src="assets/img/logo.png">
         </ul>
         <ul class="nav me-auto mt-1">
           <li class="card-text-titulo" >PalxPal</li>
         </ul>
         <ul class="nav mt-1">
-          <li  type="button"><a href="#" class="btn btn-outline-custom">Login</a></li>
+          <li  type="button"><a href="#" class="btn btn-outline-custom">Inicia sesión</a></li>
 
-          <li type="button"><a href="#" class="btn btn-bgcolor-custom">Sign up</a></li>
+          <li type="button"><a href="#" class="btn btn-bgcolor-custom">Registrate</a></li>
         </ul>
       </div>
     </nav>
@@ -43,30 +43,45 @@
       </form>
     </div>
   </header>
-  <main class="form-signin w-100 m-auto">
-    <form>
-      <img class="mb-4" src="assets/img/logo.png" alt="" width="72" height="57">
-      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-  
-      <div class="form-floating">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-        <label for="floatingInput">Email address</label>
+
+    <!-- Fin header -->
+
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+          <div class="col-md-6">
+              <div class="card">
+                  <div class="card-header">
+                    Registrate
+                  </div>
+                  <div class="card-body">
+                      <form>
+                          <div class="form-group">
+                              <label for="nombreApellido">Nombre y Apellido</label>
+                              <input type="text" class="form-control" id="nombreApellido" placeholder="Ingrese su nombre y apellido">
+                          </div>
+                          <div class="form-group">
+                              <label for="usuario">Usuario</label>
+                              <input type="text" class="form-control" id="usuario" placeholder="Ingrese su nombre de usuario">
+                          </div>
+                          <div class="form-group">
+                              <label for="email">Email</label>
+                              <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+                          </div>
+                          <div class="form-group">
+                              <label for="contraseña">Contraseña</label>
+                              <input type="password" class="form-control" id="contraseña" placeholder="Ingrese su contraseña">
+                          </div>
+                          <div class="form-group">
+                              <label for="ubicacion">Ubicación</label>
+                              <input type="text" class="form-control" id="ubicacion" placeholder="Ingrese su ubicación">
+                          </div>
+                          <button type="submit" class="btn btn-primary ">Crear cuenta</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
       </div>
-      <div class="form-floating">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-        <label for="floatingPassword">Password</label>
-      </div>
-  
-      <div class="form-check text-start my-3">
-        <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-          Remember me
-        </label>
-      </div>
-      <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-body-secondary">© 2017–2023</p>
-    </form>
-  </main>
+  </div>
 
   
   
