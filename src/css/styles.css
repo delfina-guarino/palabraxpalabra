@@ -4,18 +4,16 @@
     }
   }
 
-  .img-portada {
-
-    height: 650px;
-    
-    object-fit: cover;
-    
-  }
-
-  .card-book-img{
+  .img-portada {    
+    object-fit:scale-down;
+    height : 300px !important;
+    width: 300px !important;
+    justify-content: center;
     align-self: center;
-    height: 480px;
-    width: 500px;
+    background-color: #FDFCF8;
+  }
+  .div-img-portada {
+    background-color: #FDFCF8;
   }
 
   #more {
@@ -161,9 +159,8 @@
     bottom: 0;
     width: 100%;
     margin-top: 80px;
-    background-color: #f8f9fa; /* Set your desired background color */
-    padding: 10px 0; /* Adjust the padding as needed */
-}
+    background-color: #ffffff; 
+    padding: 10px 0; }
 
 
 
@@ -284,7 +281,7 @@ body {
 .border-dashed { --bs-border-style: dashed; }
 
 body {
-  background-color: #f8f9fa;
+  background-color: #ffffff;
 }
 .profile-container {
   background-color: #ffffff;
@@ -301,9 +298,6 @@ body {
   color: #ffffff;
 }
 
-body {
-  background-color: #f8f9fa;
-}
 .card {
   border: none;
   border-radius: 15px;
@@ -336,3 +330,7 @@ body {
   background-color: #6F42C1;
 }
 
+.my-image{
+  height : 300px !important;
+  width: 300px !important
+}
