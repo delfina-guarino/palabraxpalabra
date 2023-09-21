@@ -5,13 +5,24 @@
   }
 
   .img-portada {    
-    object-fit:scale-down;
-    height : 300px !important;
-    width: 300px !important;
+    object-fit: cover;
+    height : 350px !important;
     justify-content: center;
     align-self: center;
     background-color: #FDFCF8;
+    overflow: hidden;
   }
+
+  .img-portada-2{    
+    object-fit: cover;
+    width: 350px !important;
+    justify-content: center;
+    align-self: center;
+    background-color: #FDFCF8;
+    overflow: hidden;
+  }
+  
+
   .div-img-portada {
     background-color: #FDFCF8;
   }
@@ -333,4 +344,8 @@ body {
 .my-image{
   height : 300px !important;
   width: 300px !important
+}
+
+.modal-body p {
+  margin-bottom: 5px; 
 }
