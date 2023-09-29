@@ -3,6 +3,14 @@
       font-size: 3.5rem;
     }
   }
+  
+  .footer {
+    bottom: 0;
+    width: 100%;
+    margin-top: 80px;
+    background-color: #8e71c3; 
+    padding: 10px 0; 
+  }
 
   .img-portada {    
     object-fit:scale-down;
@@ -10,12 +18,14 @@
     width: 300px !important;
     justify-content: center;
     align-self: center;
-    background-color: #FDFCF8;
+    background-color: #fff;
   }
+  
   .div-img-portada {
-    background-color: #FDFCF8;
+    background-color: #ffffff;
   }
 
+ 
   #more {
     display: none;
   }
@@ -70,7 +80,7 @@
   }
 
   .nav-bgcolor-custom {
-    background-color: #FDFCF8;
+    background-color: #8e71c3;
   }
 
   .btn-bgcolor-custom {
@@ -155,12 +165,6 @@
     flex-grow: 1;
   }
 
-  .footer {
-    bottom: 0;
-    width: 100%;
-    margin-top: 80px;
-    background-color: #ffffff; 
-    padding: 10px 0; }
 
 
 
@@ -224,6 +228,10 @@
   background-color: #FDFCF8;
 }
 
+.modal{
+  background-color: #FDFCF8;
+}
+
 .btn-bgcolor-custom {
   background-color: #6F42C1 ;
   color: #FFFFFF; 
@@ -255,6 +263,7 @@
 html,
 body {
   height: 100%;
+  background-color: #FDFCF8;
 }
 
 .form-signin {
@@ -278,11 +287,10 @@ body {
   border-top-right-radius: 0;
 }
 
-.border-dashed { --bs-border-style: dashed; }
+.border-dashed { 
+  --bs-border-style: dashed; }
 
-body {
-  background-color: #ffffff;
-}
+
 .profile-container {
   background-color: #ffffff;
   padding: 20px;

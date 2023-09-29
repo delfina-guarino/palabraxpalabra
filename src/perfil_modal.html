@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login | PalxPal </title>
-
+    <title>Tu perfil | PalxPal </title>
     <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Your+Custom+Font" rel="stylesheet">
 
@@ -12,17 +11,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
-
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-
+    <link href="headers.css" rel="stylesheet">
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    
     <!-- Enlace html con estilos-->
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+  
   </head>
   <body>
-    <!--Header -->
+    <!-- Header -->
     <nav class="py-2 nav-bgcolor-custom border-bottom">
       <div class="container d-flex flex-wrap nav-bgcolor-custom text-align-center">
         <ul class="nav me-auto">
@@ -52,33 +51,59 @@
 
   <!-- Fin header -->
 
-    <div class="container mt-5">
+  <div class="container mt-5">
       <div class="row justify-content-center">
-          <div class="col-md-6">
-              <div class="card">
-                  <div class="card-header">
-                    Inicia sesión
-                  </div>
-                  <div class="card-body">
-                      <form>
-                          <div class="form-group">
-                              <label for="nombreApellido">Usuario o email</label>
-                              <input type="text" class="form-control" id="nombreApellido" placeholder="Ingrese su usuario o email">
-                          </div>
-                          <div class="form-group">
-                              <label for="contraseña">Contraseña</label>
-                              <input type="password" class="form-control" id="contraseña" placeholder="Ingrese su contraseña">
-                          </div>
-                          <button type="submit" class="btn btn-primary ">Inicia sesión</button>
-                      </form>
-                  </div>
+          <div class="col-md-8 profile-container">
+              <!-- Foto de perfil del usuario -->
+              <div class="text-center">
+                  <img src="assets/img/fotoperfil.jpg" alt="User Profile Picture" class="img-fluid rounded-circle profile-picture">
+              </div>
+              <!-- Información del usuario -->
+              <h1 class="mt-3 text-center">Dalila Marquez</h1>
+              <p class="text-center"><strong>@dalimarq</strong>
+              <p class="text-center"><strong>Ubicación:</strong> Martinez, Buenos Aires</p>
+              
+              <!-- Boton editar perfil -->
+              <div class="text-center">
+                  <button class="btn btn-bgcolor-custom">Editar </button>
               </div>
           </div>
       </div>
   </div>
-
   
+  <div class="modal modal-sheet position-static d-block overflow-hidden p-4 py-md-5" tabindex="-1" role="dialog" id="modalSheet">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header border-bottom-0">
+          <h1 class="modal-title fs-5">Agregar libro</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6 class="text-secondary">Estás Solicitando</h6>
+          <h5>Gente Normal, Sally Rooney</h4>
   
+          <h6 class="text-secondary">Propietario</h6>
+          <h5>@juanitamagri</h5>
+  
+          <h6 class="text-secondary">Ubicación</h6>
+          <h5>Beccar</h5>
+  
+          <h6 class="text-secondary">Ofrece un libro</h6>
+          <select class="form-select mb-3" name="" id="">
+              <option value="1">Esperando a Godot, Samuel Beckett</option>
+              <option value="2">Muchas vidas, muchos maestros, Brian Weiss</option>
+              <option value="3">Operación Masacre, Rodolfo Walsh</option>
+          </select>
+      </div>
+  
+      <div class="modal-footer">
+          <button class="btn btn-bgcolor-custom">
+              Confirmar
+          </button>
+      </div>
+      </div>
+    </div>
+  </div>
   <!--Footer-->  
   <div class="container.fluid footer">
     <footer class="py-3 my-4">
@@ -87,7 +112,9 @@
 
     </footer>
 
-  <!--Fin footer-->
+  <!--Fin footer-->  
+
+
 
 
 
