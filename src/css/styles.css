@@ -344,7 +344,34 @@ body {
   background-color: #6F42C1;
 }
 
-.btn-primary:hover {
+.btn-primary:active {
+  background-color: #9682bc;
+}
+
+.btn-primary:focus {
+  background-color: #6F42C1;
+}
+
+.btn-secondary {
+  background-color: #6F42C1;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.btn-secondary{
+  background-color: #9177c0;
+}
+
+.btn-secondary:hover{
+  background-color: #9177c0;
+}
+
+.btn-secondary.active{
+  background-color: #6F42C1;
+}
+
+.btn-secondary.focus{
   background-color: #6F42C1;
 }
 
@@ -355,4 +382,17 @@ body {
 
 .modal-body p {
   margin-bottom: 5px; 
+}
+
+.badge-pen{
+  background-color: #6F42C1; 
+}
+
+.badge-pro{
+  background-color: #b59ee0; 
+}
+
+.badge-fin{
+  background-color: #eae7eb; 
+  color: #6F42C1;
 }

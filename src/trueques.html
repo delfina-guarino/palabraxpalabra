@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro  | PalxPal </title>
+
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Your+Custom+Font" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Enlace html con estilos-->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+  </head>
+  <body>
+    <!--Header -->
+    <nav class="py-2 nav-bgcolor-custom border-bottom">
+      <div class="container d-flex flex-wrap nav-bgcolor-custom text-align-center">
+        <ul class="nav me-auto">
+          <img height="50px" src="assets/img/logo.png">
+        </ul>
+        <ul class="nav me-auto mt-1">
+          <li class="card-text-titulo" >PalxPal</li>
+        </ul>
+        <ul class="nav mt-1">
+          <li  type="button"><a href="#" class="btn btn-outline-custom">Login</a></li>
+
+          <li type="button"><a href="#" class="btn btn-bgcolor-custom">Registrarse</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header class="py-3 mb-4 border-bottom nav-bgcolor-custom">
+    <div class="container d-flex flex-wrap justify-content-center">
+      <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4">Buscá tu libro para truequear</span>
+      </a>
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+        <input type="search" class="form-control" placeholder="Buscá tu libro..." aria-label="Search">
+      </form>
+    </div>
+  </header>
+
+  <!-- Fin header -->
+
+  <div class="container mt-5">
+    <h2>Tus trueques</h2>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>Libro</th>
+                <th>Ubicación</th>
+                <th>Usuario</th>
+                <th>Fecha</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td><span class="badge badge-pen">Pendiente</span></td>
+              <td><B>El tunel</B>, Jorge Luis Borges</td>
+              <td>San Telmo, Buenos Aires</td>
+              <td>Maria Paz Soler @marisoler</td>
+              <td>02-10-2023</td>
+              <td>
+                  <button class="btn btn-bgcolor-custom" onclick="openAcceptModal(3)">Aceptar</button>
+              </td>
+            </tr>
+            <tr>
+                <td><span class="badge badge-pro">En proceso</span></td>
+                <td><B>Rayuela</B>, Julio Cortazar</td>
+                <td>Belgrano, Buenos Aires</td>
+                <td>Roman Salguero @r.salguero</td>
+                <td>15-09-2023</td>
+                <td>
+                    <button class="btn btn-outline-custom" onclick="openEditModal(1)">Editar estado</button>
+                </td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-pro">En proceso</span></td>
+              <td><B>Los cuatro acuerdos</B>, Miguel Ángel Ruiz Macias</td>
+              <td>Palermo, Buenos Aires</td>
+              <td>Patricia Robledo @patrirobledo</td>
+              <td>15-09-2023</td>
+              <td>
+                  <button class="btn btn-outline-custom" onclick="openEditModal(1)">Editar estado</button>
+              </td>
+          </tr>
+            <tr>
+                <td><span class="badge badge-fin">Finalizado</span></td>
+                <td><B>Las viudas de los jueves</B>, Claudia Piñeiro</td>
+                <td>La Plata, Buenos Aires</td>
+                <td>Claudia Gutierrez @claugut</td>
+                <td>16-09-2023</td>
+                <td>
+                    <button class="btn btn-outline-custom" onclick="openEditModal(2)">Editar estado</button>
+                </td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-fin">Finalizado</span></td>
+              <td><B>Las alas de Sophie</B>, Alice Kellen</td>
+              <td>Beccar, Buenos Aires</td>
+              <td>Juan Pablo Franco @jpfranco</td>
+              <td>04-07-2023</td>
+              <td>
+                  <button class="btn btn-outline-custom" onclick="openEditModal(2)">Editar estado</button>
+              </td>
+          </tr>
+          <tr>
+              <td><span class="badge badge-fin overflow:hidden">Finalizado</span></td>
+              <td><B>Nuestra parte de la noche</B>, Mariana Enriquez</td>
+              <td>Villa Crespo, Buenos Aires</td>
+              <td>Viviana Huergo @vivianahuergo</td>
+              <td>22-06-2023</td>
+              <td>
+                  <button class="btn btn-outline-custom" onclick="openEditModal(2)">Editar estado</button>
+              </td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+
+  <!-- Modals for Edit and Accept actions -->
+  <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!-- Add your edit form content here -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Edit Item</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Edit form content goes here -->
+                <p>Edit item details here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save Changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="acceptModal" tabindex="-1" role="dialog" aria-labelledby="acceptModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!-- Add your accept form content here -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="acceptModalLabel">Accept Item</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Accept form content goes here -->
+                <p>Accept item details here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Accept</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Bootstrap JS and jQuery scripts here -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    // Function to open the Edit modal
+    function openEditModal(itemId) {
+        $('#editModal').modal('show');
+    }
+
+    // Function to open the Accept modal
+    function openAcceptModal(itemId) {
+        $('#acceptModal').modal('show');
+    }
+</script>
+    
+  </body>
+</html>
