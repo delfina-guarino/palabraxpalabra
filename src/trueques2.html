@@ -56,30 +56,8 @@
   <div class="container mt-5">
     <h2>Nuevas solicitudes</h2>
     <table class="table table-bordered">
-      <thead>
-          <tr>
-              <th>Estado</th>
-              <th>Libro ofrecido</th>
-              <th>Libro pedido</th>
-              <th>Ubicación</th>
-              <th>Usuario</th>
-              <th>Fecha</th>
-              <th>Acción</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-            <td><span class="badge badge-pen">Pendiente</span></td>
-            <td><B>El tunel</B>, Jorge Luis Borges</td>
-            <td><B>Cien años de soledad</B>, Gabriel García Márquez</td>
-            <td>San Telmo, Buenos Aires</td>
-            <td>Maria Paz Soler @marisoler</td>
-            <td>02-10-2023</td>
-            <td>
-                <button class="btn btn-bgcolor-custom" onclick="openAcceptModal(3)">Aceptar</button>
-            </td>
-          </tr>
-      </tbody>
+      <h6>No hay nuevas solicitudes.</h6>
+      
   </table>
     <h2>Tus trueques</h2>
     <table class="table table-bordered">
@@ -95,17 +73,17 @@
             </tr>
         </thead>
         <tbody>
-          <tr>
-            <td><span class="badge badge-pro">En proceso</span></td>
-            <td><B>Gente Normal</B>, Sally Rooney</td>
-            <td><B>Una corte de espinas y rosas</B>, Sarah J Maas</td>
-            <td>Belgrano, Buenos Aires</td>
-            <td>Juanita Magri @juanitamagri</td>
-            <td>15-09-2023</td>
-            <td>
+            <tr>
+              <td><span class="badge badge-pro">En proceso</span></td>
+              <td><B>El tunel</B>, Jorge Luis Borges</td>
+              <td><B>Cien años de soledad</B>, Gabriel García Márquez</td>
+              <td>San Telmo, Buenos Aires</td>
+              <td>Maria Paz Soler @marisoler</td>
+              <td>02-10-2023</td>
+              <td>
                 <button class="btn btn-outline-custom" onclick="openEditModal(1)">Actualizar</button>
-            </td>
-        </tr>
+              </td>
+            </tr>
             <tr>
                 <td><span class="badge badge-pro">En proceso</span></td>
                 <td><B>Rayuela</B>, Julio Cortazar</td>
@@ -194,8 +172,6 @@
 </div>
 
 
-
-<!-- Modal para aceptar trueque -->
 <div class="modal fade" id="acceptModal" tabindex="-1" role="dialog" aria-labelledby="acceptModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -206,18 +182,17 @@
                 </button>
             </div>
             <div class="modal-body">
-                <!-- Accept form content goes here -->
                 <p>Estas aceptando el trueque de <strong>Roman Salguero @r.salguero</strong>, que ofrece el libro <strong> El tunel, Jorge Luis Borges</strong> a cambio del libro <strong> Cien años de soledad, Gabriel García Márquez</strong>.</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-custom" data-dismiss="modal">Rechazar</button>
-                <button type="button" class="btn btn-bgcolor-custom" s>Confirmar</button>
+                <button type="button" class="btn btn-outline-custom" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-bgcolor-custom">Confirmar</button>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Add Bootstrap JS and jQuery scripts here -->
+<!-- Bootstrap JS y jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
