@@ -396,3 +396,8 @@ body {
   background-color: #eae7eb; 
   color: #6F42C1;
 }
+
+.link{
+  text-decoration:none;
+  color: #FFFFFF; 
+}
