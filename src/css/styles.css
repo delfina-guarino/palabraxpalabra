@@ -397,7 +397,62 @@ body {
   color: #6F42C1;
 }
 
+.badge-genero{
+  background-color: #d6d3dc; 
+  color: #8d6fc6;
+}
+
 .link{
   text-decoration:none;
   color: #FFFFFF; 
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.book-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.badge {
+  margin-right: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.badge-genre {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.badge-status {
+  background-color: #28a745;
+  color: #fff;
 }
