@@ -24,7 +24,63 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          margin: 0;
+          padding: 0;
+      }
+
+      h1 {
+          background-color: #3498db;
+          color: #fff;
+          padding: 20px;
+          margin: 0;
+      }
+
+      form {
+          max-width: 500px;
+          margin: 20px auto;
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label, input, select, textarea {
+          display: block;
+          margin: 10px 0;
+      }
+
+      input[type="text"],
+      input[type="number"],
+      select,
+      textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+      }
+
+      input[type="file"] {
+          display: block;
+          margin-top: 10px;
+      }
+
+      input[type="submit"] {
+          background-color: #3498db;
+          color: #fff;
+          border: none;
+          border-radius: 4px;
+          padding: 10px 20px;
+          cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+          background-color: #2980b9;
+      }
+  </style>
   </head>
   <body>
     <!--Header -->
@@ -41,9 +97,9 @@
             <li><a href="#" class="nav-link px-2 link-body-emphasis">Trueques</a></li>
           </ul>
   
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <div class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
             <input type="search" class="form-control" placeholder="Buscar libro..." aria-label="Search">
-          </form>
+          </div>
   
           <div class="dropdown text-end">
             <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -63,94 +119,44 @@
   <!-- Fin header -->
     
 
-  <div class="container mt-5">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="card">
-                <img src="assets/img/gentenormal.jpg" alt="Image" class="card-img-top img-portada-2 ">
-                <div class="card-body">
-                    <h5 class="card-text-titulo">Gente Normal, Sally Rooney</h5>
-                    <p class="card-text-autor">Beccar, Buenos Aires</strong></p>
-                    <p class="card-text-genero">Género: Ficción Literaria / Novela
-                    </p>
-                    <p class="text-secondary">
-                      Marianne y Connell son compañeros de secundaria pero no cruzan palabra. Él es uno de los populares; y ella; una chica solitaria que ha aprendido a mantenerse alejada del resto de la gente. Todos saben que Marianne vive en una mansión y que la madre de Connell se encarga de su limpieza; pero nadie imagina que cada tarde los dos jóvenes coinciden. Uno de esos días; una conversación torpe dará comienzo a una relación que podría cambiar su vida. </span>
-                  </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-body">
-                    <h6 class="card-subtitle mb-2 text-muted">Publicado por</h6>
-                    <h5 class="card-title">Juanita Magri </h5>
-                    <h7 class="card-title">@juanitamagri</h7>
-                    <br>
-                    <p class="card-title"><strong>Libros solicitados:</strong></p>
-                    <p class="card-text">Dulceagrio, Stephanie Danler</p>
-                    <p class="card-text">Éramos unos niños, Patti Smith</p>
-                    <p class="card-text">Todo lo que sé sobre amor, Dolly Alderton</p>
-                    <!--Trigger modal-->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#popupModal">Solicitar trueque</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+  <h1>Upload a Book</h1>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="title">Título del libro:</label>
+        <input type="text" id="title" name="title" required>
 
-<!-- Modal -->
-<div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title text-center" id="popupModalLabel">Solicitud de trueque</h5>
-            </div>
-            <div class="modal-body">
-                <p>Estas solicitando</p>
-                <p><strong>Gente Normal</strong></p>
-                <p class="mt-3">Al usuario</p>
-                <p><strong>Juanita Magri (@juanitamagri)</strong></p>
-                <p class="mt-3">Ubicado en </p>
-                <p><strong>Beccar, Buenos Aires</strong></p>
-                <div class="form-group mt-3">
-                    <label for="dropdown">Elegir libro a ofrecer</label>
-                    <select class="form-control mt-2" id="dropdown">
-                        <option value="option1">El tatuador de Auschwitz, Heather Morris</option>
-                        <option value="option2">El hombre en busca de sentido, Viktor Frankl</option>
-                        <option value="option3">M Train, Patti Smith</option>
-                        <option value="option4">Bunny, Mona Awa</option>
-                    </select>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#popupModalConf" data-dismiss="modal">Confirmar</button>
-            </div>
-        </div>
-    </div>
-</div>
+        <label for="author">Autor:</label>
+        <input type="text" id="author" name "author" required>
 
+        <label for="year">Año:</label>
+        <input type="number" id="year" name="year" required>
 
-<!-- Modal confirmación-->
-<div class="modal fade" id="popupModalConf" tabindex="-1" role="dialog" aria-labelledby="popupModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title text-center" id="popupModalLabel">Solicitud de trueque</h5>
-          </div>
-          <div class="modal-body">
-            <h5 class="modal-title text-center" id="popupModalLabel">¡Felicitaciones!</h5>
-              <p class="mt-3">Tu solicitud por <strong>Gente Normal,</strong> de autor <strong>Sally Rooney</strong> al usuario <strong>Juanita Magri (@juanitamagri)</strong> ubicado en <strong>Beccar, Buenos Aires</strong> fue enviada exitosamente.</p>
-          </div>
-          <p class="text-center text-lg"><strong>¡A seguir truequeando, palabra x palabra!</strong></p>
-          
-          <div class="modal-footer">
-              <button type="button" class="btn btn-primary"><a href="trueques.html" class="link">Ver trueque</a></button>
-          </div>
-      </div>
-  </div>
-</div>
+        <label for="status">Estado:</label>
+        <select id="status" name="status" required>
+            <option value="Nuevo">Nuevo</option>
+            <option value="Usado">Usado</option>
+        </select>
 
+        <label for="location">Ubicación:</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="genre">Género:</label>
+        <input type="text" id="genre" name="genre" list="genreOptions">
+        <datalist id="genreOptions">
+            <option value="Ficción Literaria / Novela">
+            <option value="Ciencia Ficción">
+            <option value="Misterio / Suspenso">
+            <option value="Romance">
+            <option value="Fantasía">
+        </datalist>
+
+        <label for="description">Descripción:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+
+        <label for="book_file">Subir libro (PDF):</label>
+        <input type="file" id="book_file" name="book_file" accept=".pdf" required>
+
+        <input type="submit" value="Upload">
+    </form>
 
 <!--Footer-->  
 <div class="container.fluid footer nav-bgcolor-custom">
@@ -159,6 +165,8 @@
     <p class="text-center text-body-secondary">Hecho por Pilar Alonso Duarte, Lucia Jones, Victoria Rodriguez Lopardo y Delfina Guarino</p>
 
   </footer>
+<!--Fin footer-->  
+
 </div>
 
 

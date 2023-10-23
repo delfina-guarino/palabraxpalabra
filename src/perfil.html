@@ -21,36 +21,40 @@
   
   </head>
   <body>
-    <!-- Header -->
-    <nav class="py-2 nav-bgcolor-custom border-bottom">
-      <div class="container d-flex flex-wrap nav-bgcolor-custom text-align-center">
-        <ul class="nav me-auto">
-          <a href="index.html"><img height="50px" src="assets/img/logo.png" ></a>
-        </ul>
-        <ul class="nav me-auto mt-1">
-          <li class="card-text-titulo" >PalxPal</li>
-        </ul>
-        <ul class="nav mt-1">
-          <li  type="button"><a href="trueques.html" class="btn">Tus trueques</a></li>
+   <!--Header -->
+   <header class="p-3 mb-3 border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
 
-          <li  type="button"><a href="#" class="btn btn-bgcolor-custom">Perfil</a></li>
-
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="index.html" class="p-3"><img height="50px" src="assets/img/logo.png"></a></li>
+          <li><a href="#" class="nav-link px-2 link-body-emphasis">Tus libros</a></li>
+          <li><a href="#" class="nav-link px-2 link-body-emphasis">Trueques</a></li>
         </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control" placeholder="Buscar libro..." aria-label="Search">
+        </form>
+
+        <div class="dropdown text-end">
+          <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="assets/img/fotoperfil.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small">
+            <li><a class="dropdown-item" href="#">Configuración</a></li>
+            <li><a class="dropdown-item" href="perfil.html">Tu perfil</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+          </ul>
+        </div>
       </div>
-    </nav>
-    <header class="py-3 mb-4 border-bottom nav-bgcolor-custom">
-    <div class="container d-flex flex-wrap justify-content-center">
-      <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        <span class="fs-4">Buscá tu libro para truequear</span>
-      </a>
-      <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
-        <input type="search" class="form-control" placeholder="Buscá tu libro..." aria-label="Search">
-      </form>
     </div>
   </header>
 
-  <!-- Fin header -->
+<!-- Fin header -->
 
   <div class="container mt-5">
       <div class="row justify-content-center">
