@@ -29,36 +29,36 @@
   <body>
     <!--Header -->
     <header class="p-3 mb-3 border-bottom">
-      <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-          </a>
-  
-          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="index.html" class="p-3"><img height="50px" src="assets/img/logo.png"></a></li>
-            <li><a href="tus_libros.html" class="nav-link px-2 link-body-emphasis">Tus libros</a></li>
-            <li><a href="trueques.html" class="nav-link px-2 link-body-emphasis">Trueques</a></li>
-          </ul>
-  
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-            <input type="search" class="form-control" placeholder="Buscar libro..." aria-label="Search">
-          </form>
-  
-          <div class="dropdown text-end">
-            <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="assets/img/fotoperfil.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
             </a>
-            <ul class="dropdown-menu text-small">
-              <li><a class="dropdown-item" href="editar.html">Configuración</a></li>
-              <li><a class="dropdown-item" href="perfil.html">Tu perfil</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="login.html">Cerrar sesión</a></li>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="index.html" class="p-3"><img height="50px" src="assets/img/logo.png"></a></li>
+              <li><a href="tus_libros.html" class="nav-link px-2 link-body-emphasis">Tus libros</a></li>
+              <li><a href="trueques.html" class="nav-link px-2 link-body-emphasis">Trueques</a></li>
             </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control" placeholder="Buscar libro..." aria-label="Search">
+            </form>
+    
+            <div class="dropdown text-end">
+              <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/img/fotoperfil.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+              </a>
+              <ul class="dropdown-menu text-small">
+                <li><a class="dropdown-item" href="editar.html">Configuración</a></li>
+                <li><a class="dropdown-item" href="perfil.html">Tu perfil</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="login.html">Cerrar sesión</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
 
   <!-- Fin header -->
     
@@ -68,20 +68,6 @@
   <div class="container">
     <h2>Disponibles</h2>
     <div class="row">
-        <div class="col-12 col-md-4">
-            <div class="card book-card">
-                <img src="book1.jpg" class="card-img-top" alt="Book 1 Image">
-                <div class="card-body">
-                    <h5 class="card-title">Cien años de soledad</h5>
-                    <p class="card-text">Gabriel García Márquez</p>
-                </div>
-                <div class="card-footer">
-                    <span class="badge badge-fin">Realismo mágico</span>
-                    <span class="badge badge-pen">Disponible</span>
-                    <button class="btn btn-sm btn-outline-custom" type="button" data-toggle="modal" data-target="#popupModal" style="float: right">Editar</button>
-                </div>
-            </div>
-        </div>
         <div class="col-12 col-md-4">
           <div class="card book-card">
               <img src="book1.jpg" class="card-img-top" alt="Book 1 Image">
@@ -110,7 +96,22 @@
               </div>
         </div>
     </div>
+    <div class="col-12 col-md-4">
+        <div class="card book-card">
+            <img src="assets/img/labibliotecademedianoche.jpg" class="card-img-top" alt="Book 1 Image">
+            <div class="card-body">
+                <h5 class="card-title">El Gran Gatsby</h5>
+                <p class="card-text">F. Scott Fitzgerald</p>
+            </div>
+            <div class="card-footer">
+                <span class="badge badge-fin">Novela de época</span>
+                <span class="badge badge-pen">Disponible</span>
+                <button class="btn btn-sm btn-outline-custom" style="float: right">Editar</button>
+            </div>
+        </div>
     </div>
+    </div>
+    
 </div>
 
 
@@ -118,20 +119,6 @@
 
 <div class="container">
   <div class="row">
-      <div class="col-12 col-md-4">
-          <div class="card book-card">
-              <img src="assets/img/labibliotecademedianoche.jpg" class="card-img-top" alt="Book 1 Image">
-              <div class="card-body">
-                  <h5 class="card-title">El Gran Gatsby</h5>
-                  <p class="card-text">F. Scott Fitzgerald</p>
-              </div>
-              <div class="card-footer">
-                  <span class="badge badge-fin">Novela de época</span>
-                  <span class="badge badge-pen">Disponible</span>
-                  <button class="btn btn-sm btn-outline-custom" style="float: right">Editar</button>
-              </div>
-          </div>
-      </div>
       <div class="col-12 col-md-4">
         <div class="card book-card">
             <img src="book1.jpg" class="card-img-top" alt="Book 1 Image">
@@ -219,6 +206,20 @@
 <div class="container">
   <h2 class="pt-5">Truequeados</h2>
   <div class="row">
+    <div class="col-12 col-md-4">
+        <div class="card book-card">
+            <img src="book1.jpg" class="card-img-top" alt="Book 1 Image">
+            <div class="card-body">
+                <h5 class="card-title">Cien años de soledad</h5>
+                <p class="card-text">Gabriel García Márquez</p>
+            </div>
+            <div class="card-footer">
+                <span class="badge badge-fin">Realismo mágico</span>
+                <span class="badge badge-genero">Truequeado</span>
+                <button class="btn btn-sm btn-outline-custom" type="button" data-toggle="modal" data-target="#popupModal" style="float: right">Editar</button>
+            </div>
+        </div>
+    </div>
       <div class="col-12 col-md-4">
           <div class="card book-card">
               <img src="assets/img/labibliotecademedianoche.jpg" class="card-img-top" alt="Book 1 Image">

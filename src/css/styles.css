@@ -156,11 +156,7 @@
 
   .card-text-ubi {
     font-size: 0.8rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    margin-top: 1.5%;
+   
   }
   .text-resumen {
     font-size: 1rem;
