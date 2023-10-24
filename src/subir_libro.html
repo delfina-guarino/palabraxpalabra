@@ -33,7 +33,7 @@
       }
 
       h1 {
-          background-color: #3498db;
+          background-color: #9177c0;
           color: #fff;
           padding: 20px;
           margin: 0;
@@ -69,7 +69,7 @@
       }
 
       input[type="submit"] {
-          background-color: #3498db;
+          background-color: #9177c0;
           color: #fff;
           border: none;
           border-radius: 4px;
@@ -78,7 +78,7 @@
       }
 
       input[type="submit"]:hover {
-          background-color: #2980b9;
+          background-color: #9177c0;
       }
   </style>
   </head>
@@ -119,7 +119,7 @@
   <!-- Fin header -->
     
 
-  <h1>Upload a Book</h1>
+  <h1>Subir libro</h1>
     <form action="upload.php" method="post" enctype="multipart/form-data">
         <label for="title">Título del libro:</label>
         <input type="text" id="title" name="title" required>
@@ -147,15 +147,16 @@
             <option value="Misterio / Suspenso">
             <option value="Romance">
             <option value="Fantasía">
+            <!-- Add more options as needed -->
         </datalist>
 
         <label for="description">Descripción:</label>
         <textarea id="description" name="description" rows="4" required></textarea>
 
-        <label for="book_file">Subir libro (PDF):</label>
-        <input type="file" id="book_file" name="book_file" accept=".pdf" required>
+        <label for="book_file">Subir imagen del libro:</label>
+        <input type="file" id="book_file" name="book_file" accept="image/*" required>
 
-        <input type="submit" value="Upload">
+        <a href="perfil.html"><input type="button" class="btn btn-bgcolor-custom" value="Subir"></a>
     </form>
 
 <!--Footer-->  
