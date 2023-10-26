@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index | PalxPal </title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Your+Custom+Font" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="headers.css" rel="stylesheet">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Enlace html con estilos-->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+  
+  </head>
+  <body>
+   <!--Header -->
+   <header class="p-3 mb-3 border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="index.html" class="p-3"><img height="50px" src="assets/img/logo.png"></a></li>
+          <li><a href="tus_libros.html" class="nav-link px-2 link-body-emphasis">Tus libros</a></li>
+          <li><a href="trueques.html" class="nav-link px-2 link-body-emphasis">Trueques</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control" placeholder="Buscar libro..." aria-label="Search">
+        </form>
+
+        <div class="dropdown text-end">
+          <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="assets/img/fotoperfil.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small">
+            <li><a class="dropdown-item" href="editar.html">Configuración</a></li>
+            <li><a class="dropdown-item" href="perfil.html">Tu perfil</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="login.html">Cerrar sesión</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!-- Fin header -->
+
+<div class="container mt-5">
+  <h1 class="text-center">Editar perfil</h1>
+  <form>
+      <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Dalila Marquez">
+      </div>
+      <div class="form-group">
+          <label for="usuario">Usuario:</label>
+          <input type="text" class="form-control" id="usuario" placeholder="dalimarq">
+      </div>
+      <div class="form-group">
+          <label for="ubicacion">Ubicación:</label>
+          <input type="text" class="form-control" id="ubicacion" placeholder="Martinez, Buenos Aires">
+      </div>
+      <div class="form-group">
+          <label for="mail">Mail:</label>
+          <input type="email" class="form-control" id="mail" placeholder="dalilamarquez1@gmail.com">
+      </div>
+      <a href="perfil.html"><button type="submit" class="btn btn-primary btn-block">Guardar cambios</button></a>
+  </form>
+</div>
+
+
+
+
+
+  
+
+  <!--Footer-->  
+  <div class="container.fluid footer">
+    <footer class="py-3 my-4">
+      <p class="text-center text-body-secondary ">© 2023 PalxPal</p>
+      <p class="text-center text-body-secondary">Hecho por Pilar Alonso Duarte, Lucia Jones, Victoria Rodriguez Lopardo y Delfina Guarino</p>
+
+    </footer>
+
+  <!--Fin footer-->
+  
+
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

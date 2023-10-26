@@ -64,7 +64,7 @@
           <tr>
               <th>Estado</th>
               <th>Libro ofrecido</th>
-              <th>Libro pedido</th>
+              <th>Tu libro</th>
               <th>Ubicación</th>
               <th>Usuario</th>
               <th>Fecha</th>
@@ -80,7 +80,7 @@
             <td>Maria Paz Soler @marisoler</td>
             <td>02-10-2023</td>
             <td>
-                <button class="btn btn-bgcolor-custom" onclick="openAcceptModal(3)">Aceptar</button>
+                <button class="btn btn-bgcolor-custom" onclick="openAcceptModal(3)">Ver solicitud</button>
             </td>
           </tr>
       </tbody>
@@ -91,7 +91,7 @@
             <tr>
                 <th>Estado</th>
                 <th>Libro ofrecido</th>
-                <th>Libro pedido</th>
+                <th>Tu libro</th>
                 <th>Ubicación</th>
                 <th>Usuario</th>
                 <th>Fecha</th>
@@ -211,14 +211,41 @@
             </div>
             <div class="modal-body">
                 <!-- Accept form content goes here -->
-                <p>Estas aceptando el trueque de <strong>Roman Salguero @r.salguero</strong>, que ofrece el libro <strong> El tunel, Jorge Luis Borges</strong> a cambio del libro <strong> Cien años de soledad, Gabriel García Márquez</strong>.</p>
-            </div>
+                <p><strong>Roman Salguero @r.salguero</strong>, te está ofreciendo el libro <strong> El tunel, Jorge Luis Borges</strong> a cambio del libro <strong> Cien años de soledad, Gabriel García Márquez</strong>.</p>
+                <p class="card-text">Ubicación:</p>
+                <p><strong>Monserrat, CABA</strong></p>
+              </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-outline-custom" data-dismiss="modal">Rechazar</button>
-                <button type="button" class="btn btn-bgcolor-custom"><a href="trueques2.html" class="link" >Confirmar</a></button>
+                <button class="btn btn-bgcolor-custom" onclick="openInfoModal(3)">Aceptar</button>
             </div>
         </div>
     </div>
+</div>
+
+<!-- Modal para info usuario -->
+<div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="acceptModalLabel">¡Felicitaciones!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <!-- Accept form content goes here -->
+              <p>Ya estás en trueque con Roman Salguero.</p>
+              <p>Para continuar el trueque, deberás contactarte con el usuario.</p>
+              <a href="trueques2.html"><div class="btn btn-bgcolor-custom d-flex justify-content-center align-items-center">Contactarse</div></a>
+
+            </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-outline-custom" data-dismiss="modal">Rechazar</button>
+              <button type="button" class="btn btn-bgcolor-custom"><a href="trueques2.html" class="link" >Aceptar</a></button>
+          </div>
+      </div>
+  </div>
 </div>
 
  <!--Footer-->  
@@ -245,6 +272,10 @@
     // Function to open the Accept modal
     function openAcceptModal(itemId) {
         $('#acceptModal').modal('show');
+    }
+
+    function openInfoModal(itemId) {
+        $('#infoModal').modal('show');
     }
 </script>
     

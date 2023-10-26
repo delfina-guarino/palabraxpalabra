@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tus trueques  | PalxPal </title>
+
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Your+Custom+Font" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Enlace html con estilos-->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+  </head>
+  <body>
+    <!--Header -->
+    <header class="p-3 mb-3 border-bottom">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+          </a>
+  
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="index.html" class="p-3"><img height="50px" src="assets/img/logo.png"></a></li>
+            <li><a href="tus_libros.html" class="nav-link px-2 link-body-emphasis">Tus libros</a></li>
+            <li><a href="trueques.html" class="nav-link px-2 link-body-emphasis">Trueques</a></li>
+          </ul>
+  
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input type="search" class="form-control" placeholder="Buscar libro..." aria-label="Search">
+          </form>
+  
+          <div class="dropdown text-end">
+            <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/img/fotoperfil.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+            </a>
+            <i class="bi bi-chat"></i>
+            <ul class="dropdown-menu text-small">
+              <li><a class="dropdown-item" href="editar.html">Configuración</a></li>
+              <li><a class="dropdown-item" href="perfil.html">Tu perfil</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="login.html">Cerrar sesión</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+  <!-- Fin header -->
+
+  <div class="container">
+    <button class="btn btn-primary" id="openChatButton">Open Chat</button>
+    <div id="chat-menu" class="chat-menu">
+        <div class="chat-container">
+            <div class="chat-box">
+                <div class="message received">
+                    <p>Hello, how are you?</p>
+                </div>
+                <div class="message sent">
+                    <p>I'm good, thanks for asking!</p>
+                </div>
+                <!-- More messages go here -->
+            </div>
+            <div class="input-container">
+                <textarea id="message-input" placeholder="Type your message..."></textarea>
+                <button id="send-button" class="btn btn-primary">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!--Footer-->  
+ <div class="container.fluid footer">
+    <footer class="py-3 my-4">
+      <p class="text-center text-body-secondary ">© 2023 PalxPal</p>
+      <p class="text-center text-body-secondary">Hecho por Pilar Alonso Duarte, Lucia Jones, Victoria Rodriguez Lopardo y Delfina Guarino</p>
+
+    </footer>
+
+  <!--Fin footer-->  
+
+<!-- Add Bootstrap JS and jQuery scripts here -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+      $('#openChatButton').on('click', function() {
+          $('#chat-menu').toggleClass('open');
+      });
+  });
+</script>
+    
+  </body>
+</html>
