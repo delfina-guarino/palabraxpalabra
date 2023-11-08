@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tus Libros | PalxPal</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Your+Custom+Font" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="headers.css" rel="stylesheet">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Enlace html con estilos-->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    
+    <!--Links para modal-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  </head>
+  <body>
+    <!--Header -->
+    <header class="p-3 mb-3 border-bottom">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+          </a>
+  
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="index.html" class="p-3"><img height="50px" src="assets/img/logo.png"></a></li>
+            <li><a href="tus_libros.html" class="nav-link px-2 link-body-emphasis">Tus libros</a></li>
+            <li><a href="trueques.html" class="nav-link px-2 link-body-emphasis">Trueques</a></li>
+          </ul>
+  
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input type="search" class="form-control" placeholder="Buscar libro..." aria-label="Search">
+          </form>
+  
+          <div class="dropdown text-end">
+            <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/img/fotoperfil.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+            </a>
+            <ul class="dropdown-menu text-small">
+              <li><a class="dropdown-item" href="editar.html">Configuración</a></li>
+              <li><a class="dropdown-item" href="perfil.html">Tu perfil</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="login.html">Cerrar sesión</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+  <!-- Fin header -->
+    
+  <!-- Fila 1-->
+
+  <h1 class="page-title">Tus Libros</h1>
+  <div class="container">
+    <h2>Disponibles</h2>
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <div class="card book-card">
+                <img src="assets/img/elañodelmono.png" class="card-img-top" alt="Book 1 Image">
+                <div class="card-body">
+                    <h5 class="card-title">El año del mono</h5>
+                    <p class="card-text">Patti Smith</p>
+                </div>
+                <div class="card-footer">
+                    <span class="badge badge-fin">Biografía</span>
+                    <span class="badge badge-pen">Disponible</span>
+                    <button class="btn btn-sm btn-outline-custom" type="button" data-toggle="modal" data-target="#popupModal" style="float: right">Editar</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card book-card">
+              <img src="assets/img/1984.png" class="card-img-top" alt="Book 1 Image">
+              <div class="card-body">
+                  <h5 class="card-title">1984</h5>
+                  <p class="card-text">George Orwell</p>
+              </div>
+              <div class="card-footer">
+                  <span class="badge badge-fin">Ciencia ficción distópica</span>
+                  <span class="badge badge-pen">Disponible</span>
+                  <button class="btn btn-sm btn-outline-custom" style="float: right">Editar</button>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card book-card">
+            <img src="assets/img/pechosyhuevos.png" class="card-img-top" alt="Book 1 Image">
+            <div class="card-body">
+                <h5 class="card-title">Pechos y huevos</h5>
+                <p class="card-text">Mieko Kawakami</p>
+            </div>
+            <div class="card-footer">
+                <span class="badge badge-fin">Ficción</span>
+                <span class="badge badge-pen">Disponible</span>
+                <button class="btn btn-sm btn-outline-custom" style="float: right">Editar</button>
+              </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+<!-- Fila 2-->
+
+<div class="container">
+  <div class="row">
+      <div class="col-12 col-md-4">
+          <div class="card book-card">
+              <img src="assets/img/elgrangatsby.png" class="card-img-top" alt="Book 1 Image">
+              <div class="card-body">
+                  <h5 class="card-title">El Gran Gatsby</h5>
+                  <p class="card-text">F. Scott Fitzgerald</p>
+              </div>
+              <div class="card-footer">
+                  <span class="badge badge-fin">Drama</span>
+                  <span class="badge badge-pen">Disponible</span>
+                  <button class="btn btn-sm btn-outline-custom" style="float: right">Editar</button>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card book-card">
+            <img src="assets/img/lanavedelocos.png" class="card-img-top" alt="Book 1 Image">
+            <div class="card-body">
+                <h5 class="card-title">La nave de los locos</h5>
+                <p class="card-text">Cristina Peri Rossi</p>
+            </div>
+            <div class="card-footer">
+                <span class="badge badge-fin">Ficción</span>
+                <span class="badge badge-pen">Disponible</span>
+                <button class="btn btn-sm btn-outline-custom" style="float: right">Editar</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="card book-card">
+          <img src="assets/img/comoacabar.png" class="card-img-top" alt="Book 1 Image">
+          <div class="card-body">
+              <h5 class="card-title">Cómo acabar con la escritura de las mujeres</h5>
+              <p class="card-text">Joanna Russ</p>
+          </div>
+          <div class="card-footer">
+              <span class="badge badge-fin">Crítica</span>
+              <span class="badge badge-pen">Disponible</span>
+              <button class="btn btn-sm btn-outline-custom" style="float: right">Editar</button>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+<!-- En trueque-->
+<!-- Fila 3-->
+<div class="container">
+  <h2 class="pt-5">En trueque</h2>
+  <div class="row">
+      <div class="col-12 col-md-4">
+          <div class="card book-card">
+              <img src="assets/img/lasombradelviento.png" class="card-img-top" alt="Book 1 Image">
+              <div class="card-body">
+                  <h5 class="card-title">La Sombra del Viento</h5>
+                  <p class="card-text">Carlos Ruiz Zafón</p>
+              </div>
+              <div class="card-footer">
+                  <span class="badge badge-fin">Novela gótica</span>
+                  <span class="badge badge-pen">En trueque</span>
+                  <button class="btn btn-sm btn-outline-custom" style="float: right">Editar</button>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card book-card">
+            <img src="assets/img/aniquilacion.png" class="card-img-top" alt="Book 1 Image">
+            <div class="card-body">
+                <h5 class="card-title">Aniquilación</h5>
+                <p class="card-text">Michel Houellebecq</p>
+            </div>
+            <div class="card-footer">
+                <span class="badge badge-fin">Thriller</span>
+                <span class="badge badge-pen">En trueque</span>
+                <button class="btn btn-sm btn-outline-custom" style="float: right">Editar</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="card book-card">
+          <img src="assets/img/unbesodedick.png" class="card-img-top" alt="Book 1 Image">
+          <div class="card-body">
+              <h5 class="card-title">Un beso de Dick</h5>
+              <p class="card-text">Fernando Molano Varga</p>
+          </div>
+          <div class="card-footer">
+              <span class="badge badge-fin">Ficción</span>
+              <span class="badge badge-pen">En trueque</span>
+              <button class="btn btn-sm btn-outline-custom" style="float: right">Editar</button>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+
+<!-- Truequeado-->
+<!-- Fila 4-->
+<div class="container">
+  <h2 class="pt-5">Truequeados</h2>
+  <div class="row">
+      <div class="col-12 col-md-4">
+          <div class="card book-card">
+              <img src="assets/img/maus.png" class="card-img-top" alt="Book 1 Image">
+              <div class="card-body">
+                  <h5 class="card-title">Maus</h5>
+                  <p class="card-text">Art Spiegelman</p>
+              </div>
+              <div class="card-footer">
+                  <span class="badge badge-fin">Novela gráfica</span>
+                  <span class="badge badge-genero">No disponible</span>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card book-card">
+            <img src="assets/img/calles.png" class="card-img-top" alt="Book 1 Image">
+            <div class="card-body">
+                <h5 class="card-title">Calles</h5>
+                <p class="card-text">Felipe Pigna</p>
+            </div>
+            <div class="card-footer">
+                <span class="badge badge-fin">Historia</span>
+                <span class="badge badge-genero">No disponible</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="card book-card">
+          <img src="assets/img/conversaciones.png" class="card-img-top" alt="Book 1 Image">
+          <div class="card-body">
+              <h5 class="card-title">Conversaciones entre amigos</h5>
+              <p class="card-text">Sally Rooney</p>
+          </div>
+          <div class="card-footer">
+              <span class="badge badge-fin">Novela romántica</span>
+              <span class="badge badge-genero">No disponible</span>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title text-center" id="popupModalLabel">Modificar estado</h5>
+          </div>
+          <div class="modal-body">
+              <p>Estas modificando el estado de tu libro</p>
+              <p><strong>Cien años de soledad</strong></p>
+              <div class="form-group mt-3">
+                  <label for="dropdown">Elegir estado</label>
+                  <select class="form-control mt-2" id="dropdown">
+                      <option value="option1">Disponible</option>
+                      <option value="option2">En trueque</option>
+                      <option value="option3">No disponible</option>
+                  </select>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#popupModalConf" data-dismiss="modal">Confirmar</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!--Footer-->  
+<div class="container.fluid footer nav-bgcolor-custom">
+  <footer class="py-3 my-4">
+    <p class="text-center text-body-secondary ">© 2023 PalxPal</p>
+    <p class="text-center text-body-secondary">Hecho por Pilar Alonso Duarte, Lucia Jones, Victoria Rodriguez Lopardo y Delfina Guarino</p>
+
+  </footer>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
