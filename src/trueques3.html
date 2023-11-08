@@ -24,46 +24,45 @@
   </head>
   <body>
     <!--Header -->
-    <header class="p-3 mb-3 border-bottom">
-      <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+   <header class="p-3 mb-3 border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="index.html" class="p-3"><img height="50px" src="assets/img/logo.png"></a></li>
+          <li><a href="trueques.html" class="nav-link px-2 link-body-emphasis">Trueques</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control" placeholder="Buscar libro..." aria-label="Search">
+        </form>
+
+        <div class="dropdown text-end">
+          <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="assets/img/fotoperfil.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
           </a>
-  
-          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="index.html" class="p-3"><img height="50px" src="assets/img/logo.png"></a></li>
-            <li><a href="tus_libros.html" class="nav-link px-2 link-body-emphasis">Tus libros</a></li>
-            <li><a href="trueques.html" class="nav-link px-2 link-body-emphasis">Trueques</a></li>
+          <ul class="dropdown-menu text-small">
+            <li><a class="dropdown-item" href="editar.html">Configuración</a></li>
+            <li><a class="dropdown-item" href="perfil.html">Tu perfil</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="login.html">Cerrar sesión</a></li>
           </ul>
-  
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-            <input type="search" class="form-control" placeholder="Buscar libro..." aria-label="Search">
-          </form>
-  
-          <div class="dropdown text-end">
-            <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="assets/img/fotoperfil.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
-            </a>
-            <ul class="dropdown-menu text-small">
-              <li><a class="dropdown-item" href="editar.html">Configuración</a></li>
-              <li><a class="dropdown-item" href="perfil.html">Tu perfil</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="login.html">Cerrar sesión</a></li>
-            </ul>
-          </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-  <!-- Fin header -->
+<!-- Fin header -->
 
   <div class="container mt-5">
     <h2>Nuevas solicitudes</h2>
     <table class="table table-bordered">
       <h6>No hay nuevas solicitudes.</h6>
       
-  </table>
+    </table>
     <h2>Tus trueques</h2>
     <table class="table table-bordered">
         <thead>
@@ -73,73 +72,76 @@
                 <th>Tu libro</th>
                 <th>Ubicación</th>
                 <th>Usuario</th>
-                <th>Fecha</th>
                 <th>Acción</th>
             </tr>
         </thead>
         <tbody>
+          <tr>
+            <td><span class="badge badge-pen">Pendiente</span></td>
+            <td><B>El retrato de Dorian Gray</B>, Oscar Wilde</td>
+            <td><B>Pechos y huevos</B>, Mieko Kawakami</td>
+            <td>Belgrano, CABA</td>
+            <td>Juana Magri</td>
+            <td>
+                <button class="btn btn-outline-custom" onclick="openEditModal(1)">Actualizar</button>
+            </td>
+        </tr>
+        <tr>
+          <td><span class="badge badge-pro">Aceptado</span></td>
+          <td><B>Miseria</B>, Dolores Reyes</td>
+          <td><B>1984</B>, George Orwells</td>
+          <td>Villa Crespo, CABA </td>
+          <td>Viviana Huergo</td>
+          <td>
+              <button class="btn btn-outline-custom" onclick="openEditModal(1)">Actualizar</button>
+          </td>
+      </tr>
             <tr>
-                <td><span class="badge badge-pro">En proceso</span></td>
-                <td><B>Rayuela</B>, Julio Cortazar</td>
-                <td><B>El secreto</B>, Donna Tart</td>
-                <td>Belgrano, Buenos Aires</td>
-                <td>Roman Salguero @r.salguero</td>
-                <td>15-09-2023</td>
+                <td><span class="badge badge-pro">Aceptado</span></td>
+                <td><B>Sobre mi hija</B>, Pedro Lembel</td>
+                <td><B>El año del mono</B>, Patti Smith</td>
+                <td>Villa Crespo, CABA </td>
+                <td>Viviana Huergo</td>
                 <td>
                     <button class="btn btn-outline-custom" onclick="openEditModal(1)">Actualizar</button>
                 </td>
             </tr>
             <tr>
-              <td><span class="badge badge-pro">En proceso</span></td>
-              <td><B>Los cuatro acuerdos</B>, Miguel Ángel Ruiz Macias</td>
-              <td><B>Mujercitas</B>, Louisa May Alcott</td>
-              <td>Palermo, Buenos Aires</td>
-              <td>Patricia Robledo @patrirobledo</td>
-              <td>15-09-2023</td>
+              <td><span class="badge badge-pro">Aceptado</span></td>
+              <td><B>Un libro sobre drogas</B>, Carl Hart</td>
+              <td><B>La nave de los locos</B>, Cristina Peri Rossi</td>
+              <td>Tigre, BS AS</td>
+              <td>Roman Salguero</td>
               <td>
                   <button class="btn btn-outline-custom" onclick="openEditModal(1)">Actualizar</button>
               </td>
           </tr>
-          <tr>
-            <td><span class="badge badge-fin">Finalizado</span></td>
-            <td><B>El tunel</B>, Jorge Luis Borges</td>
-            <td><B>Cien años de soledad</B>, Gabriel García Márquez</td>
-            <td>San Telmo, Buenos Aires</td>
-            <td>Maria Paz Soler @marisoler</td>
-            <td>02-10-2023</td>
-            <td>
-              <button class="btn btn-outline-custom" onclick="openEditModal(1)">Actualizar</button>
-            </td>
-          </tr>
             <tr>
-                <td><span class="badge badge-fin">Finalizado</span></td>
-                <td><B>Las viudas de los jueves</B>, Claudia Piñeiro</td>
-                <td><B>Orgullo y Prejuicio</B>, Jane Austen</td>
-                <td>La Plata, Buenos Aires</td>
+                <td><span class="badge badge-fin">Rechazado</span></td>
+                <td><B>El amor en los tiempos del cólera</B>, Gabriel García Marquez</td>
+                <td><B>Cómo acabar con la escritura de las mujeres</B>, Joanna Rossi</td>
+                <td>La Plata, BS AS</td>
                 <td>Claudia Gutierrez @claugut</td>
-                <td>16-09-2023</td>
                 <td>
                     <button class="btn btn-outline-custom" onclick="openEditModal(2)">Actualizar</button>
                 </td>
             </tr>
             <tr>
               <td><span class="badge badge-fin">Finalizado</span></td>
-              <td><B>Las alas de Sophie</B>, Alice Kellen</td>
-              <td><B>Sentido y sensibilidad</B>, Jane Austen</td>
-              <td>Beccar, Buenos Aires</td>
+              <td><B>Soy una tonta por quererte</B>, Camila Sosa Villada</td>
+              <td><B>Aniquilación</B>, Michel Houellebecq</td>
+              <td>Beccar, BS AS</td>
               <td>Juan Pablo Franco @jpfranco</td>
-              <td>04-07-2023</td>
               <td>
                   <button class="btn btn-outline-custom" onclick="openEditModal(2)">Actualizar</button>
               </td>
           </tr>
           <tr>
               <td><span class="badge badge-fin overflow:hidden">Finalizado</span></td>
-              <td><B>Nuestra parte de la noche</B>, Mariana Enriquez</td>
-              <td><B>Cien años de soledad</B>, Gabriel García Márquez</td>
-              <td>Villa Crespo, Buenos Aires</td>
-              <td>Viviana Huergo @vivianahuergo</td>
-              <td>22-06-2023</td>
+              <td><B>Los hombres me explican cosas</B>, Rebecca Solnit</td>
+              <td><B>Un beso de Dick</B>, Fernando Molano Varga</td>
+              <td>Belgrano, CABA</td>
+              <td>Juana Magri</td>
               <td>
                   <button class="btn btn-outline-custom" onclick="openEditModal(2)">Actualizar</button>
               </td>
